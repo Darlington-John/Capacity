@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Aeonik Regular';
+    src: url('./../assets/fonts/aeonik/Aeonik-Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('./../assets/fonts/oswald/Oswald-Regular.otf') format('truetype');
+}
+
+.oswald {
+    font-family: Oswald Regular;
+}
+
+.aeonik {
+    font-family: Aeonik Regular;
+}
+.image-carousel {
+ 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image-carousel img.active {
+    opacity: 1;
+  }
+  
+  .transitioning {
+    opacity: 0;
+  }
+  
